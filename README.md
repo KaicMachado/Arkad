@@ -2,6 +2,8 @@
 
 <h1 align="center">Website made for my personalized keychain startup</h1>
 
+![Image of Site](/src/assets/img-readme.png)
+
 ## Technologies ⚒
 
 - React JS

@@ -4,7 +4,7 @@ import React, { useState } from "react";
 const Apresentation = () => {
  return (
   <div className="bg-red-200">
-   <div className="flex justify-between w-4/5 mx-auto py-20 items-center">
+   <div className="flex justify-between w-4/5 mx-auto py-11 md:py-20 items-center">
     <div className="font-bold">
      <h2 className="text-3xl sm:text-5xl mb-3">
       Chaveiros Personalizados <br />

@@ -53,21 +53,21 @@ const ProdutosPersonalizados = () => {
   <div>
    <h1 className="text-4xl sm:text-6xl text-center my-6 md:my-7 font-semibold">
     Produtos Temáticos
-    <div>
-     <ul className="flex flex-wrap gap-8 justify-center my-4 md:my-10">
-      {produtos.map(({ titulo, subtitulo, valor, src }) => (
-       <li key={titulo}>
-        <CardProduto
-         titulo={titulo}
-         subtitulo={subtitulo}
-         src={src}
-         valor={valor}
-        />
-       </li>
-      ))}
-     </ul>
-    </div>
    </h1>
+   <div>
+    <ul className="flex flex-wrap gap-8 justify-center my-4 md:my-10">
+     {produtos.map(({ titulo, subtitulo, valor, src }) => (
+      <li key={titulo}>
+       <CardProduto
+        titulo={titulo}
+        subtitulo={subtitulo}
+        src={src}
+        valor={valor}
+       />
+      </li>
+     ))}
+    </ul>
+   </div>
   </div>
  );
 };

@@ -2,7 +2,7 @@ import React from "react";
 
 const CardProduto = ({ titulo, valor, subtitulo, src }) => {
  return (
-  <div className="md:hover:scale-110 sm:gap-2 sm:justify-between ease-out duration-300 min-h-card flex items-center justify-around  flex-col gap-1 p-5 rounded-md shadow-md max-w-96">
+  <div className="md:hover:scale-110 sm:gap-2 sm:justify-between ease-out duration-300 min-h-card flex items-center justify-around  flex-col gap-1 p-5 rounded-md shadow-md max-w-96 font-bold text-center">
    <img src={src} className="w-65 sm:w-auto" alt="Foto do Chaveiro" />
    <p className="font-bold text-neutral-500 text-base text-wrap">{subtitulo}</p>
    <h3 className="text-2xl sm:text-3xl">{titulo}</h3>

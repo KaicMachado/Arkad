@@ -1,11 +1,52 @@
 import React from "react";
 import CardProduto from "./CardProduto";
-import Palmeiras from "../assets/palmeiras.png";
-import RickandMorty from "../assets/rickandmorty1.png";
-import Xmen from "../assets/x-men.png";
-import Fluminense from "../assets/fluminense.png";
-import JiuJitsu from "../assets/jiu-jitsu.png";
-import Harry from "../assets/harry.png";
+
+const produtos = [
+ {
+  titulo: "Chaveiro Palmeiras",
+  subtitulo: "Quando surge o alviverde imponente...",
+  src: "../public/images/palmeiras.png",
+  valor: "10,00",
+ },
+ {
+  titulo: "Chaveiro Fluminense",
+  subtitulo: "Sou tricolor de coração, sou do clube tantas vezes campeão...",
+  src: "../public/images/fluminense.png",
+  valor: "10,00",
+ },
+ {
+  titulo: "Chaveiro Atlético de Madrid",
+  subtitulo: "Jugando, ganando, peleas como el mejor...",
+  src: "../public/images/atl-de-madrid.png",
+  valor: "10,00",
+ },
+ {
+  titulo: "Chaveiro Rick and Morty",
+  subtitulo: "Fala Geek, diretamente da dimensão C-137 !",
+  src: "../public/images/rickandmorty1.png",
+  valor: "10,00",
+ },
+ {
+  titulo: "Chaveiro X-men",
+  subtitulo:
+   "A mente é uma coisa frágil. Basta a mínima coisa para ir na direção errada.",
+  src: "../public/images/x-men.png",
+  valor: "10,00",
+ },
+ {
+  titulo: "Chaveiro Harry Potter",
+  subtitulo:
+   "Pode se encontrar a felicidade mesmo nas horas mais sombrias, se a pessoa se lembrar de acender a luz.",
+  src: "../public/images/harry.png",
+  valor: "10,00",
+ },
+ {
+  titulo: "Chaveiro Jiu-Jitsu",
+  subtitulo: "Para muitos o chão é o fim, para nós apenas o começo.",
+  src: "../public/images/jiu-jitsu.png",
+  valor: "10,00",
+ },
+];
 
 const ProdutosPersonalizados = () => {
  return (
@@ -14,60 +55,16 @@ const ProdutosPersonalizados = () => {
     Produtos Temáticos
     <div>
      <ul className="flex flex-wrap gap-8 justify-center my-4 md:my-10">
-      {/* Palmeiras */}
-      <li>
-       <CardProduto
-        titulo="Chaveiro Palmeiras"
-        valor="10,00"
-        subtitulo="Quando surge o alviverde imponente..."
-        src={Palmeiras}
-       />
-      </li>
-      {/* Fluminense */}
-      <li>
-       <CardProduto
-        titulo="Chaveiro Fluminense"
-        valor="10,00"
-        subtitulo="Sou tricolor de coração, sou do clube tantas vezes campeão..."
-        src={Fluminense}
-       />
-      </li>
-      {/* Rick and Morty */}
-      <li>
-       <CardProduto
-        titulo="Chaveiro Rick and Morty"
-        valor="10,00"
-        subtitulo="Fala Geek, diretamente da dimensão C-137 !"
-        src={RickandMorty}
-       />
-      </li>
-      {/* X-Men */}
-      <li>
-       <CardProduto
-        titulo="Chaveiro X-Men"
-        valor="10,00"
-        subtitulo="A mente é uma coisa frágil. Basta a mínima coisa para ir na direção errada."
-        src={Xmen}
-       />
-      </li>
-      {/* Jiu-Jitsu */}
-      <li>
-       <CardProduto
-        titulo="Chaveiro Jiu-Jitsu"
-        valor="10,00"
-        subtitulo="Para muitos o chão é o fim, para nós apenas o começo."
-        src={JiuJitsu}
-       />
-      </li>
-      {/* Harry Potter */}
-      <li>
-       <CardProduto
-        titulo="Chaveiro Harry Potter"
-        valor="10,00"
-        subtitulo="Pode se encontrar a felicidade mesmo nas horas mais sombrias, se a pessoa se lembrar de acender a luz."
-        src={Harry}
-       />
-      </li>
+      {produtos.map(({ titulo, subtitulo, valor, src }) => (
+       <li key={titulo}>
+        <CardProduto
+         titulo={titulo}
+         subtitulo={subtitulo}
+         src={src}
+         valor={valor}
+        />
+       </li>
+      ))}
      </ul>
     </div>
    </h1>

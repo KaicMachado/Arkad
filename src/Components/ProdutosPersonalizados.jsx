@@ -5,45 +5,45 @@ const produtos = [
  {
   titulo: "Chaveiro Palmeiras",
   subtitulo: "Quando surge o alviverde imponente...",
-  src: "../public/images/palmeiras.png",
+  src: "/images/palmeiras.png",
   valor: "10,00",
  },
  {
   titulo: "Chaveiro Fluminense",
   subtitulo: "Sou tricolor de coração, sou do clube tantas vezes campeão...",
-  src: "../public/images/fluminense.png",
+  src: "/images/fluminense.png",
   valor: "10,00",
  },
  {
   titulo: "Chaveiro Atlético de Madrid",
   subtitulo: "Jugando, ganando, peleas como el mejor...",
-  src: "../public/images/atl-de-madrid.png",
+  src: "/images/atl-de-madrid.png.",
   valor: "10,00",
  },
  {
   titulo: "Chaveiro Rick and Morty",
   subtitulo: "Fala Geek, diretamente da dimensão C-137 !",
-  src: "../public/images/rickandmorty1.png",
+  src: "/images/rickandmorty1.png",
   valor: "10,00",
  },
  {
   titulo: "Chaveiro X-men",
   subtitulo:
    "A mente é uma coisa frágil. Basta a mínima coisa para ir na direção errada.",
-  src: "../public/images/x-men.png",
+  src: "/images/x-men.png",
   valor: "10,00",
  },
  {
   titulo: "Chaveiro Harry Potter",
   subtitulo:
    "Pode se encontrar a felicidade mesmo nas horas mais sombrias, se a pessoa se lembrar de acender a luz.",
-  src: "../public/images/harry.png",
+  src: "/images/harry.png",
   valor: "10,00",
  },
  {
   titulo: "Chaveiro Jiu-Jitsu",
   subtitulo: "Para muitos o chão é o fim, para nós apenas o começo.",
-  src: "../public/images/jiu-jitsu.png",
+  src: "/images/jiu-jitsu.png",
   valor: "10,00",
  },
 ];

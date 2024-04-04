@@ -17,7 +17,7 @@ const produtos = [
  {
   titulo: "Chaveiro Atlético de Madrid",
   subtitulo: "Jugando, ganando, peleas como el mejor...",
-  src: "/images/atl-de-madrid.png.",
+  src: "/images/atl-de-madrid.png",
   valor: "10,00",
  },
  {

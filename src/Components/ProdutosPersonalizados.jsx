@@ -51,7 +51,7 @@ const produtos = [
 const ProdutosPersonalizados = () => {
  return (
   <div>
-   <h1 className="text-4xl sm:text-6xl text-center my-6 md:my-7 font-semibold">
+   <h1 className="text-4xl sm:text-6xl text-center my-5 md:my-7 font-semibold">
     Produtos Temáticos
    </h1>
    <div>

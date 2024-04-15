@@ -26,7 +26,7 @@ const produtos = [
 
 const PersonalizadosClientes = () => {
  return (
-  <div className="bg-red-200 py-2">
+  <div className="bg-red-200 pt-2 pb-4">
    <h1 className="text-4xl sm:text-6xl text-center my-6 md:my-7 font-semibold">
     Produtos para Clientes
    </h1>

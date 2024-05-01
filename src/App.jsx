@@ -1,5 +1,6 @@
 import Apresentation from "./Components/Apresentation";
 import Detalhes from "./Components/Detalhes";
+import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import PersonalizadosClientes from "./Components/PersonalizadosClientes";
 import ProdutosPersonalizados from "./Components/ProdutosPersonalizados";
@@ -14,6 +15,7 @@ function App() {
    <PersonalizadosClientes />
    <Detalhes />
    <SendEmail />
+   <Footer />
   </div>
  );
 }
